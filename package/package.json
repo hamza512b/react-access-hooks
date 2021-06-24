@@ -1,0 +1,45 @@
+{
+  "name": "@linears/react-access",
+  "description": "React hook for implementing accessible components.",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "author": "Hamza Khuswan <hamzakhuswan@outlook.com> (https://hamzakhuswan.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linears-io/react-access.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linears-io/react-access/issues"
+  },
+  "homepage": "https://github.com/linears-io/react-access#readme",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.ts"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  },
+  "files": [
+    "dist"
+  ]
+}

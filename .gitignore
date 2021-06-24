@@ -1,0 +1,12 @@
+# Folders
+node_modules
+dist
+.yalc
+.vscode
+.cache
+
+# Files
+yalc.lock
+
+# Errors
+yarn-error.log
