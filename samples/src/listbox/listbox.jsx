@@ -11,7 +11,9 @@ export default function Listbox() {
     const ListRef = useRef(null);
     const ListboxRef = useRef(null);"";
 
-    useOutsideClick(ListboxRef, () => setOpen(false));
+    useOutsideClick(ListboxRef, () =>  {
+        if (open) setOpen(false);
+    });
     function expand(ev) {
         if (ev) ev.preventDefault();
         setOpen(true);
@@ -31,7 +33,7 @@ export default function Listbox() {
         setOpen(false);
         ButtonRef.current.focus();
     }
-    // Following wcag
+    // Following collapsible listbox WCAG 
     // https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-collapsible.html#kbd_label
     useKeyboardAction({
         key: "Enter",
@@ -51,9 +53,11 @@ export default function Listbox() {
     useKeyboardAction({
         key: "Escape",
         action: (ev) => {
-            ev.stopImmediatePropagation();
-            setOpen(false);
-            ButtonRef.current.focus();
+            if (open) {
+                ev.stopImmediatePropagation();
+                setOpen(false);
+                ButtonRef.current.focus();
+            }
         },
     });
     useKeyboardAction({
@@ -145,12 +149,7 @@ export default function Listbox() {
                             role="option"
                             aria-selected={selectedItem === index}
                         >
-                            <span>{item}</span>
-                            {selectedItem === index && (
-                                <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
-                                </svg>
-                            )}
+                            {item}
                         </li>
                     ))}
                 </ul>

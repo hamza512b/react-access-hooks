@@ -4,4 +4,4 @@ import Listbox from "./listbox";
 
 ReactDom.render(<React.StrictMode>
     <Listbox />
-</React.StrictMode>, document.getElementById("root"))
+</React.StrictMode>, document.getElementById("root"));
