@@ -92,15 +92,21 @@ function App () {
 Whenever printable keys (character) are pressed in interval within 500 milliseconds, the `action` callback will be called with string of the pressed keys in the second argument. 
 
 ## useOutsideClick
-The `useOutsideClick` hook is far more simple it takes two arguments, HTML element reference and a callback. Whenever a click is initiated outside the element the callback will be called.
+The `useOutsideClick` hook is more simple. The hooks detects clicks outside of an element then execute your callback.
+
+The hook takes three props:
+- `element` is HTML element reference.
+- `condition` is a boolean for when the hook should be mounted (activated).
+- `action` is a callback which get executed when a click is initiated outside of the `element`. MouseEvent object is passed as first argument to the callback.
 
 
 ```jsx
 function App () {
     // ...
+    const [open, setOpen] = useState(false);
     const ListboxRef = useRef(null);
 
-    useOutsideClick(ListboxRef, () => setOpen(false));
+    useOutsideClick({ element: ListboxRef, action: (ev) => setOpen(false), condition: open });
 
     // Return some JSX
 }

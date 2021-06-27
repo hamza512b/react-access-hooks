@@ -11,9 +11,7 @@ export default function Listbox() {
     const ListRef = useRef(null);
     const ListboxRef = useRef(null);"";
 
-    useOutsideClick(ListboxRef, () =>  {
-        if (open) setOpen(false);
-    });
+    useOutsideClick({element:ListboxRef, action: ()=> setOpen(false), condition: open});
     function expand(ev) {
         if (ev) ev.preventDefault();
         setOpen(true);

@@ -1,19 +1,25 @@
 import { RefObject, useEffect } from "react";
 
-export function useOutsideClick(ref: RefObject<HTMLElement>, action: () => void): void {
+export interface OutsideClickArgs {
+    element: RefObject<Element>;
+    action: (ev: MouseEvent) => void;
+    condition: boolean;
+}
+
+export function useOutsideClick({element, action, condition}: OutsideClickArgs): void {
     useEffect(() => {
         function handleClickOutside(ev: MouseEvent) {
-            if (!ref.current || ref.current.contains(ev.target as Node)) {
+            if (!element.current || element.current.contains(ev.target as Node)) {
                 return;
             }
 
-            action();
+            action(ev);
         }
 
-        document.addEventListener("click", handleClickOutside);
+        if (condition) document.addEventListener("click", handleClickOutside);
 
         return () => {
             document.removeEventListener("click", handleClickOutside);
         };
-    }, [ref, action]);
+    }, [element, action, condition]);
 }

@@ -11,7 +11,7 @@ export default function Dialog() {
         condition: open,
         action: () => setOpen(false)
     });
-    useOutsideClick(DialogRef, () => {if (open) setOpen(false);});
+    useOutsideClick({element: DialogRef, action: () => setOpen(false), condition: open});
 
     return (
         <div>
