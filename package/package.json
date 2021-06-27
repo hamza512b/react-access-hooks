@@ -16,11 +16,11 @@
   },
   "homepage": "https://github.com/linears-io/react-access#readme",
   "scripts": {
+    "prepublishOnly": "yarn build",
     "build": "rimraf dist && rollup -c rollup.config.ts"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.11",
