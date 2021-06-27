@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Accesability</title>
+    <script src="./main.js" defer></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        [role="dialog"] {
+            box-sizing: border-box;
+            padding: 15px;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+
+        @media screen and (min-width: 640px) {
+
+            [role="dialog"] {
+                position: absolute;
+                top: 2rem;
+                left: 50vw;
+                transform: translateX(-50%);
+                /* move backwards 50% of this element's width */
+                min-width: calc(640px - (15px * 2));
+                /* == breakpoint - left+right margin */
+                min-height: auto;
+            }
+        }
+
+        .dialog_label {
+            text-align: center;
+        }
+
+        .dialog_form textarea,
+        .dialog_form label {
+            display: block;
+        }
+
+        .dialog_desc {
+            padding: 10px 20px;
+        }
+
+        .dialog-backdrop {
+            position: fixed;
+            overflow-y: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        @media screen and (min-width: 640px) {
+            .dialog-backdrop {
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .no-scroll {
+            overflow-y: auto !important;
+        }
+
+        .has-dialog {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>

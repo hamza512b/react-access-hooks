@@ -24,6 +24,7 @@ yarn add @linears/react-access
 Currently the package include these hooks:
 - `useKeyboardAction` executes a callback when key is pressed.
 - `useOutsideClick` executes a callback when clicking outside an element.
+- `useFocusTrap` traps the focus inside an element.
 
 
 ## useKeyboardAction
@@ -104,7 +105,33 @@ function App () {
     // Return some JSX
 }
 ```
+## useFocusTrap
+The `useFocusTrap` hook is useful for implementing things like dialogs or a date pickers since they often require trapping the focus inside the container element when a active.
 
+
+### useFocusTrap usage example:
+
+```jsx
+function App () {
+    // ...
+    const DialogRef = useRef(null);
+    const TextareaRef = useRef(null);
+
+    useFocusTrap({element: DialogRef, condition: open, initialFocus: TextareaRef});
+
+    // Return some JSX
+}
+```
+
+- `element` is HTML element reference for the focus trap container.
+- `condition` is boolean which determine when focus trap is active.
+- `initialFocus` is reference for an element to be focused when the focus trap is active. If this option is not set, the first focusable element will be used instead.
+
+
+**Note:** when focus trap is deactivated the focus will return to the last element before focus trap was activated.
+
+## More examples
+For more examples check the [samples directory](https://github.com/linears-io/react-access/tree/main/samples) in the Github repo. 
 
 
 --------
