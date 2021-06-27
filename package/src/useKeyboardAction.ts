@@ -36,7 +36,6 @@ export function useKeyboardAction(keyboardAction: KeyboardAction): void {
                             printableRef.current = "";
                         }, (keyboardAction as any).clearTimeout || 750);
                         printableRef.current += ev.key;
-                        console.log("Pritanble", printableRef.current);
 
                         keyboardAction.action(ev, printableRef.current);
                     }
@@ -44,7 +43,6 @@ export function useKeyboardAction(keyboardAction: KeyboardAction): void {
             } else {
                 handler = (ev: KeyboardEvent) => {
                     if (ev.code === keyboardAction.key) {
-                        console.log("string");
                         ev.preventDefault();
                         keyboardAction.action(ev, "");
                     }
@@ -53,7 +51,6 @@ export function useKeyboardAction(keyboardAction: KeyboardAction): void {
         } else if (Array.isArray(keyboardAction.key)) {
             handler = (ev: KeyboardEvent) => {
                 if ((keyboardAction.key as string[]).some((key) => key === ev.code)) {
-                    console.log("array");
                     keyboardAction.action(ev, "");
                 }
             };
