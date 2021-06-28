@@ -1,5 +1,5 @@
 {
-  "name": "@linears/react-access",
+  "name": "react-access-hooks",
   "description": "React hook for implementing accessible components.",
   "version": "1.0.0",
   "keywords": [
@@ -14,12 +14,12 @@
   "author": "Hamza Khuswan <hamzakhuswan@outlook.com> (https://hamzakhuswan.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linears-io/react-access.git"
+    "url": "git+https://github.com/hamzakhuswan/react-access-hooks.git"
   },
   "bugs": {
-    "url": "https://github.com/linears-io/react-access/issues"
+    "url": "https://github.com/hamzakhuswan/react-access-hooks/issues"
   },
-  "homepage": "https://github.com/linears-io/react-access#readme",
+  "homepage": "https://github.com/hamzakhuswan/react-access-hooks#readme",
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "rimraf dist && rollup -c rollup.config.ts"

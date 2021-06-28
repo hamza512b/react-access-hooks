@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="./docs/react-access.png" width="124">
-    <h1>Linears React Access</h1>
+    <img src="./docs/icon.png" width="124" alt="Accessibility Icon">
+    <h1>React Access Hooks</h1>
 </div>
 
 React hooks library for simplifying the implementation of accessible React components.
@@ -14,10 +14,10 @@ This package tries to simplify the way to implement accessible UI. It helps doin
 # Installation
 ```
 # npm
-npm i @linears/react-access
+npm i react-access-hooks
 
 # yarn 
-yarn add @linears/react-access
+yarn add react-access-hooks
 ```
 
 # Usage
@@ -137,7 +137,7 @@ function App () {
 **Note:** when focus trap is deactivated the focus will return to the last element before focus trap was activated.
 
 ## More examples
-For more examples check the [samples directory](https://github.com/linears-io/react-access/tree/main/samples) in the Github repo. 
+For more examples check the [samples directory](https://github.com/hamzakhuswan/react-access-hooks/tree/main/samples) in the Github repo. 
 
 
 --------

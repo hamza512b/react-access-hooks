@@ -1,5 +1,5 @@
-import { useKeyboardAction, useOutsideClick } from "@linears/react-access";
 import React, { useRef, useState } from "react";
+import { useKeyboardAction, useOutsideClick } from "react-access-hooks";
 
 const items = ["Foo", "Bar", "Baz", "Qux", "Quux", "Quuz", "Corge"];
 

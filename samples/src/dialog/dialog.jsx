@@ -1,5 +1,5 @@
-import { useFocusTrap, useKeyboardAction, useOutsideClick } from "@linears/react-access";
 import React, { useRef, useState } from "react";
+import { useFocusTrap, useKeyboardAction, useOutsideClick } from "react-access-hooks";
 
 export default function Dialog() {
     const [open, setOpen] = useState(false);
