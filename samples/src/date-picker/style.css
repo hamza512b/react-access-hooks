@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.date-picker {
+    max-width: 312px;
+    position: relative;
+}
+
+.date-picker-button {
+    display: inline-flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FEFEFE;
+    padding: 0.75rem 0.625rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.date-picker-button:focus-within {
+    box-shadow: 0px 0px 0 2px #2563EB;
+}
+
+.date-picker-button button {
+    border: none;
+    background-color: transparent;
+}
+
+.date-picker-button input:focus, .date-picker-button button:focus {
+    outline: none;
+}
+
+.date-picker-button button {
+    color: #999;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.date-picker-button button:focus, .date-picker-button button:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.date-picker-button input::placeholder {
+    color: #888;
+}
+
+.date-picker-button input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.date-picker-button input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.date-picker-button input[type="date"]::-webkit-input-placeholder {
+    visibility: hidden !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.date-picker-dialog {
+    position: absolute;
+    width: 100%;
+    background-color: #FEFEFE;
+    transform: translatey(10px);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0.75rem;
+}
+
+.date-picker-dialog-header {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.date-picker-dialog-header h2 {
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.date-picker-dialog-header button {
+    border: none;
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.date-picker-dialog-header button:hover {
+    background-color: aliceblue;
+}
+
+.date-picker-dialog-header button:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.date-picker-dialog-grid {
+    width: 100%
+}
+
+.date-picker-dialog-grid {
+    border-collapse: collapse;
+}
+
+.date-picker-dialog-grid tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.date-picker-dialog-grid td {
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    font-weight: bold;
+    place-self: center;
+    cursor: default;
+    padding: 0;
+}
+.date-picker-dialog-grid td button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.date-picker-dialog-grid button.active {
+    background-color: rgba(37, 99, 235, 0.8);
+    color: #ffffff;
+    border-radius: 50%;
+}
+.date-picker-dialog-grid button:hover {
+    background-color: rgba(37, 99, 235, 0.8);
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.date-picker-dialog-grid button:focus {
+    box-shadow: 0 0 0 2px #000;
+}
+
+.date-picker-dialog-buttons {
+    float: right;
+    margin: 0.75rem;
+}
+
+.date-picker-dialog-buttons .primary {
+    background-color: rgba(37, 99, 235, 0.8);
+    border: none;
+    color: #FEFEFE;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.date-picker-dialog-buttons .primary:hover {
+    filter: brightness(90%);
+}
+
+.date-picker-dialog-buttons .primary:focus {
+    box-shadow: 0px 0px 0 2px #E5E5E5, 0px 0px 0 4px #2563EB;
+    outline: none;
+}
+
+.date-picker-dialog-buttons .secondary {
+    background-color: #F2F4F6;
+    border: none;
+    color: #333333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.date-picker-dialog-buttons .secondary:hover {
+    filter: brightness(90%);
+}
+
+.date-picker-dialog-buttons .secondary:focus {
+    box-shadow: 0px 0px 0 2px #E5E5E5, 0px 0px 0 4px #2563EB;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
