@@ -1,7 +1,7 @@
 {
   "name": "react-access-hooks",
   "description": "React hook for implementing accessible components.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "accessibility",
     "react",
