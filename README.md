@@ -18,6 +18,9 @@ npm i react-access-hooks
 
 # yarn 
 yarn add react-access-hooks
+
+# pnpm 
+pnpm add react-access-hooks
 ```
 
 # Usage

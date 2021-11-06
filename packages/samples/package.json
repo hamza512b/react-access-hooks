@@ -6,18 +6,18 @@
   "scripts": {
     "start:listbox": "parcel ./src/listbox/index.html",
     "start:dialog": "parcel ./src/dialog/index.html",
-    "start:date-picker": "parcel ./src/date-picker/index.html --port 8080"
+    "start:date-picker": "parcel ./src/date-picker/index.html"
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-access-hooks": "^1.0.0",
+    "react-access-hooks": "workspace:*",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react-dom": "^17.0.8",
-    "@types/react": "^17.0.11",
-    "eslint": "^7.29.0",
-    "eslint-plugin-react": "^7.24.0",
-    "parcel-bundler": "^1.12.5"
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.1",
+    "parcel": "^2.0.0"
   }
 }

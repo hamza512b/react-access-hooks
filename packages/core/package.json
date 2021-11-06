@@ -21,28 +21,29 @@
   },
   "homepage": "https://github.com/hamzakhuswan/react-access-hooks#readme",
   "scripts": {
-    "prepublishOnly": "yarn build",
-    "build": "rimraf dist && rollup -c rollup.config.ts"
+    "prepublishOnly": "pnpm build",
+    "build": "rimraf dist && rollup -c rollup.config.ts",
+    "postinstall": "pnpm build"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "eslint": "^7.29.0",
-    "eslint-plugin-react": "^7.24.0",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.52.2",
+    "rollup": "^2.59.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
-    "tslib": "^2.3.0",
-    "typescript": "^4.3.4"
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
   },
   "files": [
     "dist"
