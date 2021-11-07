@@ -1,0 +1,11 @@
+<svg width="240" height="240" viewBox="0 0 63.5 63.5" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.2909 0 0 1.2909 -7.4414751 -7.4573557)" style="fill:#0ba1a1;fill-opacity:1">
+    <circle style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:3.06495;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="29.162254" cy="23.827051" r="2.4808214"/>
+    <rect style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:1.47223;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2.0101621" height="4.1411633" x="28.997351" y="27.251062" ry="0"/>
+    <rect style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:2.49688;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="9.1652727" height="1.9657466" x="23.660616" y="31.890726" transform="rotate(-10.443)" ry=".98287332"/>
+    <rect style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:2.49688;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="9.1652727" height="1.9657466" x="-30.260288" y="27.602865" transform="scale(-1 1) rotate(1.2101161)" ry=".98287332"/>
+    <rect style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:2.42896;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="1.781957" height="8.9425116" x="-8.6761274" y="42.276165" transform="rotate(-54.076)" ry=".89097852"/>
+    <rect style="fill:#0ba1a1;fill-opacity:1;stroke:none;stroke-width:2.42896;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="1.781957" height="8.9425116" x="-38.74324" y="20.75695" transform="scale(-1 1) rotate(-17.0687495)" ry=".89097852"/>
+  </g>
+  <path style="fill:none;fill-opacity:1;stroke:#0ba1a1;stroke-width:7.00003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" d="m171.84078 32.993087 10.87118 56.076967 7.70323-4.048831-49.97298 27.667847 6.2311 6.07505-41.75619-38.977295-3.8522 7.803421 24.16624-51.757141-8.61189-1.252274 56.69174 6.989625z" transform="matrix(.41708 0 0 .41708 -28.9916935 -.1917178)"/>
+</svg>

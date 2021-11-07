@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./docs/icon.png" width="124" alt="Accessibility Icon">
+    <img src="./docs/icon.svg" alt="React Access Hooks Icon">
     <h1>React Access Hooks</h1>
 </div>
 
@@ -144,5 +144,5 @@ For more examples check the [samples directory](https://github.com/hamzakhuswan/
 
 
 --------
-Made by [HamzaKhuswan](https://hamzakhuswan.com) \
+Made by [Hamza](https://hamza.se) \
 Licensed under MIT license
